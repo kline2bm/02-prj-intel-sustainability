@@ -1,1 +1,94 @@
-/* Add your CSS here */
+/* Set a simple background color for the whole page */
+body {
+  background-color: #f0f4f8; /* Light blue-gray background */
+  font-family: Arial, sans-serif; /* Easy-to-read font */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* Center the main content and add some space around it */
+.container {
+  max-width: 600px; /* Limit the width for easier reading */
+  margin: 40px auto; /* Center horizontally and add space at the top */
+  background-color: #fff; /* White background for content */
+  padding: 24px; /* Add space inside the box */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* Soft shadow */
+}
+
+/* Style the main heading */
+h1 {
+  color: #2a5d84; /* Dark blue color */
+  text-align: center; /* Center the heading */
+  margin-bottom: 16px; /* Space below the heading */
+}
+
+/* Style subheadings */
+h2, h3 {
+  color: #397ba6; /* Slightly lighter blue */
+  margin-top: 24px; /* Space above subheadings */
+}
+
+/* Style paragraphs for better readability */
+p {
+  color: #333; /* Dark gray text */
+  line-height: 1.6; /* More space between lines */
+  margin-bottom: 16px; /* Space below paragraphs */
+}
+
+/* Style links */
+a {
+  color: #2a5d84; /* Match heading color */
+  text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Add a simple button style */
+button, .btn {
+  background-color: #2a5d84; /* Blue background */
+  color: #fff; /* White text */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Space inside button */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Larger text */
+  margin-top: 12px; /* Space above button */
+}
+
+button:hover, .btn:hover {
+  background-color: #397ba6; /* Slightly lighter blue on hover */
+}
+
+/* Add spacing to lists */
+ul, ol {
+  margin-bottom: 16px; /* Space below lists */
+  padding-left: 24px; /* Indent list items */
+}
+
+/* Responsive: Make sure it looks good on small screens */
+@media (max-width: 700px) {
+  .container {
+    padding: 12px;
+    margin: 16px;
+  }
+
+  h1 {
+    font-size: 24px; /* Smaller font size for headings */
+  }
+
+  h2, h3 {
+    font-size: 20px; /* Smaller subheading font size */
+  }
+
+  p, ul, ol {
+    font-size: 14px; /* Base font size for readability */
+  }
+
+  button, .btn {
+    width: 100%; /* Full-width buttons on small screens */
+    padding: 12px; /* More padding for easier tapping */
+  }
+}
