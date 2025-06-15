@@ -175,7 +175,6 @@ img {
   max-height: 100px;
 }
 
-/* --- TIMELINE CARDS SECTION (under <!-- Timeline Cards Section -->) --- */
 section {
   display: flex;
   flex-wrap: nowrap;
@@ -183,6 +182,8 @@ section {
   gap: 24px;
   padding: 24px 0;
   margin-bottom: 32px;
+  scroll-snap-type: x mandatory; /* Enable horizontal scroll snap */
+  scroll-behavior: smooth; /* Smooth scrolling */
 }
 
 section > div {
@@ -202,6 +203,7 @@ section > div {
   display: flex;
   flex-direction: column;
   align-items: center;
+  scroll-snap-align: start; /* Snap each card to the start of the scroll area */
 }
 
 section > div h2 {
@@ -245,7 +247,6 @@ section > div:hover p {
   max-height: 200px;
 }
 
-/* Responsive: Stack timeline vertically on small screens */
 @media (max-width: 700px) {
   .container {
     padding: 12px;
@@ -295,9 +296,11 @@ section > div:hover p {
     flex-direction: column;
     gap: 16px;
     overflow-x: visible;
+    scroll-snap-type: none; /* Disable snap on small screens */
   }
   section > div {
     max-width: 100%;
     min-width: 0;
+    scroll-snap-align: none;
   }
 }
